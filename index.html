@@ -52,21 +52,20 @@
 
     <script>
         function submitForm(event) {
-            event.preventDefault(); // Prevents the default form submission behavior
+            event.preventDefault();
     
-            // Get the password input value
+            
             var password = document.getElementById("passwordInput").value;
     
-            // Set the correct password
+           
             var correctPassword = "tuwi";
     
-            // Perform validation
             if (password === "") {
                 alert("Please enter a password");
             } else if (password === correctPassword) {
                 alert("Login successful!");
                 
-                // Redirect to another page
+               
                 window.location.href = "header.html";
                 
               
